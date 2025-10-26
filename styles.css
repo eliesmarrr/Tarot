@@ -1,0 +1,179 @@
+header, main, footer {
+  text-align: center; /* centra el texto */
+}
+header h1 {
+  margin: 0 auto; /* centra el bloque del título */
+}
+
+
+body {
+  
+  background-image: url("items/fondo4.jpg");
+  background-size: cover;        /* Abarca todo el fondo */
+  background-position: center center; /* Centrada */
+  background-repeat: no-repeat;  /* No se repite */
+  background-attachment: fixed;  /* Fija el fondo */
+  image-rendering: -webkit-optimize-contrast; /* Mejora nitidez */
+  margin: 0;
+  padding: 0;
+  height: 100vh;       
+  
+
+
+header h1 {
+   font-family: 'Cinzel', serif;
+  font-size: 2.8rem;
+  color: #d4af37; /* dorado */
+  text-shadow: 
+    0 0 10px #d4af37, 
+    0 0 20px #a855f7, 
+    0 0 40px #6b21a8; /* brillo místico */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: brillar 3s infinite alternate;
+}
+
+
+/* Efecto al pasar el mouse */
+.cuadro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #d4af37; /* dorado */
+  text-shadow:
+    0 0 10px #d4af37,
+    0 0 20px #f7a355,
+    0 0 40px #6b21a8; /* brillo místico */
+  letter-spacing: 3px;
+  animation: brillar 3s infinite alternate;
+
+  /* 🖤 Franja negra de fondo */
+   background: linear-gradient(90deg, #000000, #2e004f);
+  display: block;
+width: 100%;
+ /* ajusta el fondo solo al ancho del texto */
+  padding: 40px 0px; /* espacio alrededor del texto */
+  border-radius: 1px; /* bordes redondeados */
+}
+h2 {
+  color: #a855f7; /* morado */
+}
+
+p {
+  color: #ffffff; /* blanco */
+}
+h3 {
+  color: #d5a8ff;
+}
+
+@keyframes brillar {
+  from {
+    text-shadow:
+      0 0 10px #d4af37,
+      0 0 20px #a855f7;
+  }
+  to {
+    text-shadow:
+      0 0 25px #f5e7a1,
+      0 0 50px #a855f7;
+  }
+}
+
+
+@keyframes brillar {
+  from {
+    text-shadow: 
+      0 0 10px #d4af37, 
+      0 0 20px #a855f7;
+  }
+  to {
+    text-shadow: 
+      0 0 25px #f5e7a1, 
+      0 0 50px #a855f7;
+  }
+}
+img {
+  width: 300px;   /* ancho */
+  height: auto;   /* mantiene proporción */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5); /* sombra morada */
+}
+.lista-seccion {
+  background-color: rgba(0, 0, 0, 0.842); /* fondo negro semitransparente */
+  color: #f9f9f9; /* color del texto */
+  border: 1px solid #d4af37; /* borde dorado */
+  border-radius: 15px; /* bordes redondeados */
+  padding: 30px; /* espacio interno */
+  margin: 30px auto; /* espacio entre cuadros */
+  width: 80%; /* ancho del cuadro */
+  max-width: 800px; /* límite máximo */
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4); /* sombra morada */
+  text-align: center; /* centra el texto dentro */
+}
+#origen {
+  background-color: rgba(0, 0, 0, 0.842); /* fondo negro semitransparente */
+  color: #f9f9f9; /* color del texto */
+  border: 1px solid #d4af37; /* borde dorado */
+  border-radius: 15px; /* bordes redondeados */
+  padding: 20px; /* espacio interno */
+  margin: 30px auto; /* espacio entre cuadros */
+  width: 80%; /* ancho del cuadro */
+  max-width: 800px; /* límite máximo */
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4); /* sombra morada */
+  text-align: center; /* centra el texto dentro */
+}
+.subtitulo {
+  background-color: rgba(0, 0, 0, 0.842); /* fondo negro semitransparente */
+  color: #f9f9f9; /* color del texto */
+  border: 1px solid #d4af37; /* borde dorado */
+  border-radius: 15px; /* bordes redondeados */
+  padding: 20px; /* espacio interno */
+  margin: 30px auto; /* espacio entre cuadros */
+  width: 80%; /* ancho del cuadro */
+  max-width: 800px; /* límite máximo */
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4); /* sombra morada */
+  text-align: center; /* centra el texto dentro */
+}
+.lista-seccion {
+  display: ;                /* Alinea texto e imagen en fila */
+  align-items: center;          /* Centra verticalmente */
+  justify-content: space-between; /* Separa los dos lados */
+  gap: 10px;                    /* Espacio entre texto e imagen */
+}
+
+/* TEXTO */
+.lista-seccion .texto {
+  flex: 1;                      /* Ocupa el espacio disponible */
+  color: #d4af37;               /* Letras doradas */
+  font-family: 'Cinzel', serif;
+}
+
+/* IMAGEN */
+.lista-seccion .img img {
+  width: 300px;                 /* Tamaño de la imagen */
+  height: auto;
+  border-radius: 10px;          /* Bordes suaves */
+  box-shadow: 0 0 15px rgba(107, 33, 168, 0.6); /* Brillo morado */
+}
+
+
+
+footer {
+  background: linear-gradient(90deg, #000000, #2e004f);
+  color: #d4af37;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 2px solid #d4af37;
+  box-shadow: 0 -5px 15px rgba(212, 175, 55, 0.3);
+  font-family: 'Cinzel', serif;
+}
+
+
+
+}
+
+}
+
